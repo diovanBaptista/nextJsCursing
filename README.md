@@ -94,11 +94,7 @@ pnpm lint
 
 ## Próximos passos
 
-- melhorar a interface da página inicial
-- tratar estados de erro na requisição ao GitHub
-- transformar a visualização do perfil em um card mais amigável
-- adicionar mais exemplos práticos de rotas e renderização
-- publicar o projeto na Vercel
+- Projeto de E-cormece
 
 ## Autor
 
@@ -108,4 +104,3 @@ pnpm lint
 
 ---
 
-Se quiser, no próximo passo eu também posso deixar esse README com um visual ainda mais forte para portfólio, incluindo banner, seção de preview e uma organização no estilo projeto profissional do GitHub.
