@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Fundamentals
 
-## Getting Started
+<p align="center">
+  Projeto de estudo com foco em fundamentos modernos do ecossistema Next.js,
+  explorando renderização no servidor, App Router, componentes assíncronos e carregamento com Suspense.
+</p>
 
-First, run the development server:
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js" alt="Next.js 16" />
+  <img src="https://img.shields.io/badge/React-19-149ECA?style=for-the-badge&logo=react&logoColor=white" alt="React 19" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript 5" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS 4" />
+</p>
+
+## Sobre o projeto
+
+Este repositório documenta minha jornada prática com Next.js por meio de uma aplicação simples, mas muito útil para consolidar conceitos essenciais da stack moderna do React.
+
+A proposta é exercitar fundamentos que aparecem com frequência em projetos reais, como:
+
+- organização com `App Router`
+- componentes assíncronos no servidor
+- uso de `Suspense` para estados de carregamento
+- consumo de API externa com `fetch`
+- separação de responsabilidades entre componentes
+
+## O que está sendo praticado
+
+- `Server Components`
+- `Suspense`
+- `loading.tsx`
+- chamadas assíncronas com `fetch`
+- composição de componentes
+- estrutura base com TypeScript
+
+## Funcionalidades atuais
+
+- página inicial renderizada com App Router
+- componente assíncrono para buscar dados do perfil do GitHub
+- componente de carregamento simulado para demonstrar comportamento assíncrono
+- uso de fallbacks independentes com `Suspense`
+
+## Tecnologias
+
+| Tecnologia | Finalidade |
+| --- | --- |
+| Next.js 16 | Framework principal da aplicação |
+| React 19 | Biblioteca para construção da interface |
+| TypeScript 5 | Tipagem estática e melhor manutenção do código |
+| Tailwind CSS 4 | Estilização da aplicação |
+| ESLint | Padronização e qualidade de código |
+| pnpm | Gerenciamento de dependências |
+
+## Estrutura do projeto
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+next13-fundamentals/
+├── app/
+│   ├── layout.tsx
+│   ├── loading.tsx
+│   └── page.tsx
+├── componentes/
+│   ├── github-profile.tsx
+│   └── loadingcompany.tsx
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como executar localmente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio/next13-fundamentals
+pnpm install
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+A aplicação ficará disponível em `http://localhost:3000`.
 
-## Learn More
+## Scripts disponíveis
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm dev
+pnpm build
+pnpm start
+pnpm lint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Aprendizados reforçados neste projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- diferença entre carregamento global e carregamento por trecho da interface
+- como componentes server-side podem buscar dados diretamente
+- como usar `Suspense` para melhorar a experiência de carregamento
+- como estruturar um projeto Next.js de forma simples e evolutiva
 
-## Deploy on Vercel
+## Próximos passos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- melhorar a interface da página inicial
+- tratar estados de erro na requisição ao GitHub
+- transformar a visualização do perfil em um card mais amigável
+- adicionar mais exemplos práticos de rotas e renderização
+- publicar o projeto na Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Autor
+
+**Diovan Baptista**
+
+- GitHub: [@diovanBaptista](https://github.com/diovanBaptista)
+
+---
+
+Se quiser, no próximo passo eu também posso deixar esse README com um visual ainda mais forte para portfólio, incluindo banner, seção de preview e uma organização no estilo projeto profissional do GitHub.
